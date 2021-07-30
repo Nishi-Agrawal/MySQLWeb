@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineSQLWeb</title>
+    <link rel = "stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class= "login_page">
+        <h1 style = "color:azure;font-size: 40px;"> ONLINE SQL WEB</h1>
+        <div class="form">
+            <form class = "registration_form">
+                <input type = "text" placeholder="username"/>
+                <input type = "text" placeholder="email id"/>
+                <input type = "text" placeholder="password"/>
+                <button>
+                   Create account
+                </button>
+                <p class = "message">Already Registered? <a href = "#"> Login </a></p>
+
+            </form>
+
+            <form class = "login_form">
+                <input type = "text" placeholder="username"/>
+                <input type = "password" placeholder="password"/>
+                <button> login</button>
+                <p class = "message"> Not Registered? <a href="#"> Register </a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src = 'https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+
+    <script>
+        $('.message').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"},"slow");
+        });
+    </script>
+    
+</body>
+</html>
